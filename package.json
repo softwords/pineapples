@@ -1,0 +1,50 @@
+{
+  "name": "plottable.js",
+  "description": "A modular charting library built on D3",
+  "version": "1.16.0",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/palantir/plottable.git"
+  },
+  "author": "Palantir Technologies",
+  "scripts": {
+    "test": "grunt test-travis"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-cli": "0.1.6",
+    "grunt-contrib-watch": "~0.5.3",
+    "load-grunt-tasks": "~0.2.0",
+    "grunt-ts": "5.1.0",
+    "grunt-tslint": "2.4.0",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-mocha-phantomjs": "0.6.1",
+    "grunt-blanket-mocha": "~0.4.0",
+    "grunt-saucelabs": "8.6.0",
+    "typescript": "1.6.2",
+    "grunt-sed": "~0.1.1",
+    "grunt-git": "~0.2.6",
+    "grunt-contrib-clean": "~0.4.0",
+    "grunt-bump": "0.3.1",
+    "grunt-contrib-compress": "~0.9.1",
+    "grunt-contrib-uglify": "~0.4.0",
+    "grunt-shell": "0.7.0",
+    "grunt-parallelize": "1.0.0",
+    "grunt-jscs": "1.8.0",
+    "grunt-eslint": "15.0.0",
+
+    "grunt-iisexpress": "~0.4.0",
+    "grunt-open": "~0.2.3",
+
+    "grunt-tsd": "^0.1.0",
+
+    "grunt-karma": "~0.12",
+    "karma": "~0.13",
+    "karma-chrome-launcher": "^0.1.4",
+    "karma-jasmine": "^0.1.5",
+    "karma-phantomjs-launcher": "^0.1.4",
+    "karma-script-launcher": "^0.1.0"
+
+  }
+}

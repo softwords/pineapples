@@ -1,0 +1,41 @@
+{
+  "name": "pineapples",
+  "description": "Web client project for Pineapples EMIS",
+  "version": "0.0.1",
+  "main": ["pineapples.js", "pineapples.css"],
+  "typescript": {
+    "definition": "pineapples.d.ts"
+  },
+  "license": "MIT",
+  "ignore": [
+    "**/*",
+    "!bower.json",
+    "!pineapples.js",
+    "!pineapples.css",
+    "!pineapples.min.js",
+    "!pineapples.d.ts"
+  ],
+  "keywords": [
+    "pineapples",
+	  "EMIS"
+  ],
+  "dependencies": {
+    "d3": "^3.5.5",
+    "d3-tip": "^0.6.7",
+    "angular": "1.4",
+    "angular-bootstrap": "^0.14.3",
+    "jquery": "^2.1.4",
+    "bootstrap": "^3.3.5",
+    "plottable": "^1.16.1"
+
+
+
+  },
+  "homepage": "pineapplesjs.org",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/softwords/pineapples.git"
+  },
+  "devDependencies": {
+  }
+}
