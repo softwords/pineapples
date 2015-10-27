@@ -1,0 +1,51 @@
+﻿/* styles related to searchers in the header area*/
+
+        /* redfine this here rather than rebuild the theme less*/
+        #headerbar {
+            padding: 5px 10px;
+        } 
+        .searcher .form-control {
+            
+            height: 24px;
+            padding: 2px 9px;
+            margin: 2px;
+            background-color: #f0f0ff;
+            font-size: 12px;
+            border-radius: 1px
+        }
+        .searcher label {
+            color:  white;
+            opacity: .9;
+            font-size: 12px;
+            margin-bottom: 5px;
+            
+        }
+        
+        .searcher .btn {
+            height: 30px;
+            font-size: 12px;
+            width: 100%;
+            position: relative;
+            text-align: right;
+        }
+        button.findNow:before {
+            position:absolute;
+            left: 5px;
+            top: 1px;
+            text-align:left;
+            font-family: FontAwesome;
+            font-size: 20px;
+            content: "\F002"; 
+        }
+        button.clearSearch:before {
+            position:absolute;
+            left: 5px;
+            top: 1px;
+            text-align:left;
+            font-family: FontAwesome;
+            font-size: 20px;
+            content: "\F00D";  
+        }
+        
+
+
