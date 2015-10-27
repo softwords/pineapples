@@ -1,6 +1,6 @@
 # Build files
-build/
 test/tests.js
+test/app/tests.js
 
 # Typescript
 .baseDir.ts
@@ -10,8 +10,6 @@ test/tests.js
 node_modules/
 bower_components/
 local/
-quicktests/github_token.txt
-quicktests/overlaying/list_of_quicktests.json
 
 # Mac
 .DS_Store
@@ -36,3 +34,7 @@ quicktests/overlaying/list_of_quicktests.json
 
 # Visual Studio
 *.sln
+.vs/
+
+# temporary!
+src/app/ts/**/*.js
