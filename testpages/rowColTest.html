@@ -1,0 +1,171 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style>
+        .background {
+            visibility:visible;
+
+        }
+        .plottable.scatter .legend text {
+            font-family:Arial, Helvetica, sans-serif;
+            font-size:12px;
+            font-weight:normal;
+        }
+        .d3-tip {
+          line-height: 1;
+          font-weight: bold;
+          padding: 12px;
+          background: rgba(0, 0, 0, 0.8);
+          color: #fff;
+          border-radius: 2px;
+        }
+
+        /* Creates a small triangle extender for the tooltip */
+        .d3-tip:after {
+          box-sizing: border-box;
+          display: inline;
+          font-size: 10px;
+          width: 100%;
+          line-height: 1;
+          color: rgba(0, 0, 0, 0.8);
+          content: "\25BC";
+          position: absolute;
+          text-align: center;
+        }
+
+        /* Style northward tooltips differently */
+        .d3-tip.n:after {
+          margin: -1px 0 0 0;
+          top: 100%;
+          left: 0;
+}
+    </style>
+
+    <link href="../bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="../bower_components/plottable/plottable.css" rel="stylesheet" />
+</head>
+<body ng-app="pineapples">
+
+
+    <!--
+        <script src="_client/app/js/features/scatter/scatterAPI.js"></script>
+     -->
+    <div ng-controller="ctrlr as vm">
+        <table>
+            <tr>
+
+                <td>
+                    <select ng-model="vm.percentage">
+                        <option>percentage</option>
+                        <option>actual</option>
+                    </select>
+                </td>
+                <td>
+                    <select ng-model="vm.orientation">
+                        <option>vertical</option>
+                        <option>horizontal</option>
+                    </select>
+                </td>
+                <td>
+                    <div class="btn-group">
+                        <label class="btn btn-primary" ng-model="vm.chartType" uib-btn-radio="'v'">V</label>
+                        <label class="btn btn-primary" ng-model="vm.chartType" uib-btn-radio="'vp'">V%</label>
+                        <label class="btn btn-primary" ng-model="vm.chartType" uib-btn-radio="'vc'">VC</label>
+                        <label class="btn btn-primary" ng-model="vm.chartType" uib-btn-radio="'h'">H</label>
+                        <label class="btn btn-primary" ng-model="vm.chartType" uib-btn-radio="'hp'">H%</label>
+                        <label class="btn btn-primary" ng-model="vm.chartType" uib-btn-radio="'hc'">HC</label>
+
+                    </div>
+                </td>
+                <td>
+                    <button type="button" class="btn btn-primary" ng-model="vm.flip" uib-btn-checkbox btn-checkbox-true="'on'" btn-checkbox-false="'off'">
+                        flip
+                    </button>
+                </td>
+            </tr>
+        </table>
+
+        <div row-col-chart height="800" width="1000" dataset="dataset"
+             percentage="{{vm.percentage}}" orientation="{{vm.orientation}}" stack="{{vm.stack}}" flip="{{vm.flip}}" info="vm.info"></div>
+    </div>
+   <script src="../bower_components/d3/d3.min.js"></script>
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- restangular needs lodash -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/lodash/2.1.0/lodash.compat.min.js"></script>
+    <!-- angular and plugins-->
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../bower_components/d3-tip/index.js"></script>
+
+    <script src="../dist/plottable.js"></script>
+    <script>
+        ;
+        (function () {
+
+            var ctrlr = function ($scope, $compile) {
+                var self = this;
+
+                d3.json("../test/data/rowcolData.json", function(data) {
+                    $scope.dataset = data;
+                    // $apply is needed becuase the d3 callback is out of Angular's view
+                    $scope.$apply();
+                });
+                var _chtType;
+                Object.defineProperty(self, "chartType",
+                {
+                    get: function() { return _chtType; },
+                    set: function(n) {
+                        _chtType = n;
+                        switch(_chtType) {
+                            case "v":
+                                self.orientation = "vertical";
+                                self.percentage = "actual";
+                                self.stack = "stack";
+                                break;
+                            case "vp":
+                                self.orientation = "vertical";
+                                self.percentage = "percentage";
+                                self.stack = "stack";
+                                break;
+                            case "vc":
+                                self.orientation = "vertical";
+                                self.percentage = "actual";
+                                self.stack = "cluster";
+                                break;
+                            case "h":
+                                self.orientation = "horizontal";
+                                self.percentage = "actual";
+                                self.stack = "stack";
+                                break;
+                            case "hp":
+                                self.orientation = "horizontal";
+                                self.percentage = "percentage";
+                                self.stack = "stack";
+                                break;
+                            case "hc":
+                                self.orientation = "horizontal";
+                                self.percentage = "actual";
+                                self.stack = "cluster";
+                                break;
+                        }
+                    }
+                });
+                this.chartType = "v";
+                this.flip = "on";
+            }
+            angular
+                .module("pineapples", ['ui.bootstrap'])
+                .controller("ctrlr", ['$scope', '$compile', ctrlr]);
+        })();
+
+
+    </script>
+    <script src="../pineapples.js"></script>
+
+
+
+
+</body>
+</html>
