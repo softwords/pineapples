@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "noImplicitAny": false,
+        "sourceMap": false,
+        "declaration": true,
+        "removeComments": false,
+        "outFile": "../../pineapples.js"
+    },
+    "files": [
+      "../../typings/d3/d3.d.ts",
+      "../../typings/angular/angular.d.ts",
+      "../../typings/plottable/plottable.d.ts",
+      "../../typings/lodash/lodash.d.ts",
+
+      "./ts/features/Scatter/scatterDirective.ts",
+      "./ts/features/Scatter/rowcolDirective.ts"
+    ]
+}
