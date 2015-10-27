@@ -1,0 +1,236 @@
+﻿{
+  "ResultSet": [
+    {
+      "R": "Botswana",
+      "C": "<>",
+      "Num": 2,
+      "RName": "Country",
+      "CName": "Gender"
+    },
+    {
+      "R": "Botswana",
+      "C": "F",
+      "Num": 57,
+      "RName": "Country",
+      "CName": "Gender"
+    },
+    {
+      "R": "Botswana",
+      "C": "M",
+      "Num": 45,
+      "RName": "Country",
+      "CName": "Gender"
+    },
+    {
+      "R": "Ethiopia",
+      "C": "M",
+      "Num": 1,
+      "RName": "Country",
+      "CName": "Gender"
+    },
+    {
+      "R": "Ghana",
+      "C": "<>",
+      "Num": 2,
+      "RName": "Country",
+      "CName": "Gender"
+    },
+    {
+      "R": "Ghana",
+      "C": "F",
+      "Num": 63,
+      "RName": "Country",
+      "CName": "Gender"
+    },
+    {
+      "R": "Ghana",
+      "C": "M",
+      "Num": 234,
+      "RName": "Country",
+      "CName": "Gender"
+    },
+    {
+      "R": "Kenya",
+      "C": "<>",
+      "Num": 11,
+      "RName": "Country",
+      "CName": "Gender"
+    },
+    {
+      "R": "Kenya",
+      "C": "F",
+      "Num": 101,
+      "RName": "Country",
+      "CName": "Gender"
+    },
+    {
+      "R": "Kenya",
+      "C": "M",
+      "Num": 168,
+      "RName": "Country",
+      "CName": "Gender"
+    },
+    {
+      "R": "Madagascar",
+      "C": "F",
+      "Num": 11,
+      "RName": "Country",
+      "CName": "Gender"
+    },
+    {
+      "R": "Madagascar",
+      "C": "M",
+      "Num": 14,
+      "RName": "Country",
+      "CName": "Gender"
+    },
+    {
+      "R": "Malawi",
+      "C": "<>",
+      "Num": 2,
+      "RName": "Country",
+      "CName": "Gender"
+    },
+    {
+      "R": "Malawi",
+      "C": "F",
+      "Num": 127,
+      "RName": "Country",
+      "CName": "Gender"
+    },
+    {
+      "R": "Malawi",
+      "C": "M",
+      "Num": 174,
+      "RName": "Country",
+      "CName": "Gender"
+    },
+    {
+      "R": "Mauritius",
+      "C": "F",
+      "Num": 16,
+      "RName": "Country",
+      "CName": "Gender"
+    },
+    {
+      "R": "Mauritius",
+      "C": "M",
+      "Num": 22,
+      "RName": "Country",
+      "CName": "Gender"
+    },
+    {
+      "R": "Mozambique",
+      "C": "<>",
+      "Num": 1,
+      "RName": "Country",
+      "CName": "Gender"
+    },
+    {
+      "R": "Mozambique",
+      "C": "F",
+      "Num": 15,
+      "RName": "Country",
+      "CName": "Gender"
+    },
+    {
+      "R": "Mozambique",
+      "C": "M",
+      "Num": 51,
+      "RName": "Country",
+      "CName": "Gender"
+    },
+    {
+      "R": "Nigeria",
+      "C": "<>",
+      "Num": 5,
+      "RName": "Country",
+      "CName": "Gender"
+    },
+    {
+      "R": "Nigeria",
+      "C": "F",
+      "Num": 128,
+      "RName": "Country",
+      "CName": "Gender"
+    },
+    {
+      "R": "Nigeria",
+      "C": "M",
+      "Num": 380,
+      "RName": "Country",
+      "CName": "Gender"
+    },
+    {
+      "R": "South Africa",
+      "C": "<>",
+      "Num": 2,
+      "RName": "Country",
+      "CName": "Gender"
+    },
+    {
+      "R": "South Africa",
+      "C": "F",
+      "Num": 21,
+      "RName": "Country",
+      "CName": "Gender"
+    },
+    {
+      "R": "South Africa",
+      "C": "M",
+      "Num": 17,
+      "RName": "Country",
+      "CName": "Gender"
+    },
+    {
+      "R": "Tanzania",
+      "C": "<>",
+      "Num": 3,
+      "RName": "Country",
+      "CName": "Gender"
+    },
+    {
+      "R": "Tanzania",
+      "C": "F",
+      "Num": 87,
+      "RName": "Country",
+      "CName": "Gender"
+    },
+    {
+      "R": "Tanzania",
+      "C": "M",
+      "Num": 233,
+      "RName": "Country",
+      "CName": "Gender"
+    },
+    {
+      "R": "Zambia",
+      "C": "<>",
+      "Num": 3,
+      "RName": "Country",
+      "CName": "Gender"
+    },
+    {
+      "R": "Zambia",
+      "C": "F",
+      "Num": 64,
+      "RName": "Country",
+      "CName": "Gender"
+    },
+    {
+      "R": "Zambia",
+      "C": "M",
+      "Num": 111,
+      "RName": "Country",
+      "CName": "Gender"
+    }
+  ],
+  "HasPageInfo": true,
+  "NumResults": 2171,
+  "FirstRec": 1,
+  "LastRec": 2171,
+  "PageSize": 0,
+  "PageNo": 1,
+  "IsLastPage": true,
+  "LastPage": 1
+}
