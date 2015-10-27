@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "noImplicitAny": false,
+        "sourceMap": false,
+        "declaration": false,
+        "removeComments": false,
+        "outFile": "tests.js"
+    },
+    "files": [
+      "../../typings/d3/d3.d.ts",
+      "../../typings/angular/angular.d.ts",
+      "../../typings/jasmine/jasmine.d.ts",
+      "../../pineapples.d.ts",
+      "./ts/features/MandE/mande.ts"
+    ]
+}
